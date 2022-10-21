@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:focus,
+:active {
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Gilroy';
+  font-weight: 500;
+  line-height: 140%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+:root {
+  --color1: #FFFFFF;
+  --color2: #8D86C9;
+
+}
+
+/*--------------------*/
+
+/* FONTS */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Medium.eot');
+  src: local('Gilroy Medium'), local('Gilroy-Medium'),
+    url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-Medium.woff2') format('woff2'),
+    url('Gilroy-Medium.woff') format('woff'),
+    url('Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Semibold.eot');
+  src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+    url('Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-Semibold.woff2') format('woff2'),
+    url('Gilroy-Semibold.woff') format('woff'),
+    url('Gilroy-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Bold.eot');
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-Bold.woff2') format('woff2'),
+    url('Gilroy-Bold.woff') format('woff'),
+    url('Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Regular.eot');
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+    url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-Regular.woff2') format('woff2'),
+    url('Gilroy-Regular.woff') format('woff'),
+    url('Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ============================== */
+.container {
+  max-width: 1296px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+header {
+  background: url('./img/background.png');
+  height: 1000px;
+}
+
+.navbar-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 100px;
+  margin-top: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-link-wrapper {
+  display: flex;
+  gap: 40px;
+  color: var(--color1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-web-wrapper img:nth-child(2) {
+  margin-left: 20px;
+  margin-top: 3px;
+}
+
+.navbar-line-decor {
+  max-width: 1920px;
+  margin-top: 20px;
+  border-bottom: 1px solid var(--color1);
+  opacity: 0.3;
 }
