@@ -185,4 +185,88 @@ header {
   margin-top: 20px;
   border-bottom: 1px solid var(--color1);
   opacity: 0.3;
+  margin-bottom: 200px;
+}
+
+/* HELLO-BLOCK */
+.h1-wrapper h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 170%;
+  color: var(--color1);
+  margin-left: 25px;
+  margin-bottom: 60px;
+}
+
+.video-btn {
+  max-width: 80px;
+  width: 80px;
+  height: 80px;
+  margin-left: 15px;
+}
+
+.white-ellipse {
+  max-width: 80px;
+  height: 80px;
+  border: 1px solid var(--color1);
+  border-radius: 50%;
+}
+
+.purple-elipse {
+  max-width: 64px;
+  height: 64px;
+  background: var(--color2);
+  border: 1px solid var(--color2);
+  border-radius: 50%;
+  margin: 5px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello-video-btn {
+  display: flex;
+  margin-bottom: 200px;
+
+  align-items: center;
+}
+
+.btn-text {
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color1);
+}
+
+.service-wrapper-position {
+  display: flex;
+  gap: 10px;
+
+}
+
+.service-wrapper {
+  min-width: 315px;
+  height: 149px;
+  background: var(--color2);
+}
+
+.sevice-name {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color1);
+  margin-left: 35px;
+  margin-top: 35px;
+  margin-bottom: 17px;
+}
+
+.service-category-wrapper {
+  display: flex;
+  gap: 55px;
+}
+
+.service-category {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color1);
+  margin-left: 35px;
 }
