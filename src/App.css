@@ -158,6 +158,7 @@ h6 {
 header {
   background: url('./img/background.png');
   height: 1000px;
+  margin-bottom: 170px;
 }
 
 .navbar-container {
@@ -269,4 +270,152 @@ header {
   font-weight: 700;
   color: var(--color1);
   margin-left: 35px;
+}
+
+/* MAIN */
+.advantages-wrapper {
+  max-width: 1296px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 150px;
+}
+
+
+.advantages-block-1,
+.advantages-block-2,
+.advantages-block-3 {
+  background: url('./img/adv-background-1.png');
+  max-width: 416px;
+  width: 385px;
+  height: 450px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+}
+
+.advantages-block-1 p,
+.advantages-block-2 p,
+.advantages-block-3 p {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 140%;
+  color: var(--color1);
+}
+
+.advantages-block-2 {
+  background: url('./img/adv-background-2.png');
+}
+
+.advantages-block-3 {
+  background: url('./img/adv-background-3.png');
+}
+
+.adv-border-decor-block {
+  max-width: 416px;
+  height: 470px;
+  border: 1px solid #F7ECE1;
+  padding: 10px;
+  margin-left: 7px;
+}
+
+.about-wrapper {
+  max-width: 1076px;
+  height: 654px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.about-img {
+  position: absolute;
+  z-index: 1;
+  background: url('./img/img_about_block.png');
+  max-width: 526px;
+  width: 526px;
+  height: 514px;
+
+}
+
+.about-text {
+  position: absolute;
+  left: 450px;
+  max-width: 636px;
+  width: 636px;
+  height: 654px;
+  background: #F7ECE1;
+  text-align: center;
+}
+
+.about-text h2 {
+  margin-top: 70px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 36px;
+  color: #333333;
+}
+
+.about-text p {
+  max-width: 430px;
+  margin-left: 146px;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.about-text h3 {
+  font-weight: 600;
+  font-size: 21px;
+  color: #333333;
+  margin-left: 15px;
+  margin-bottom: 25px;
+
+}
+
+.about-list-container-position {
+  display: flex;
+  gap: 23px;
+}
+
+.about-decor-li-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  margin-top: 5px;
+}
+
+.decor-li {
+  width: 8px;
+  height: 8px;
+  background: var(--color2);
+  margin-left: 145px;
+}
+
+.decor-li-1 {
+  margin-top: 1px;
+}
+
+.decor-li-2 {
+  margin-top: 6px;
+}
+
+.decor-li-3 {
+  margin-top: 4px;
+}
+
+.decor-li-4 {
+  margin-top: 4px;
+}
+
+.about-text ul {
+  max-width: 400px;
+  height: 202px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #333333;
+  text-align: left;
 }
