@@ -1,5 +1,13 @@
 import React from "react";
-
+import leftArrow from './img/leftArrow_icon.png'
+import rightArrow from './img/rightArrow_icon.png'
+import trainer1 from './img/trainers_photo_1.png'
+import trainer2 from './img/trainers_photo_2.png'
+import trainer3 from './img/trainers_photo_3.png'
+import trainer4 from './img/trainers_photo_4.png'
+import trainer5 from './img/trainers_photo_5.png'
+import trainer6 from './img/trainers_photo_6.png'
+import arrowDecor from './img/abonement-arrow-decor.png'
 class Main extends React.Component {
     render() {
         return (
@@ -48,6 +56,130 @@ class Main extends React.Component {
                         </div>
                     </div>
                 </section>
+                <section className="trainers">
+                    <div className="trainers-wrapper">
+                        <h2 className="trainers-h2">Тренерский состав
+
+                        </h2>
+                        <div className="trainers-slider-btn-wrapper">
+                            <div className="trainers-slider-btn">
+                                <img src={leftArrow} alt="" />
+                            </div>
+                            <div className="trainers-slider-btn">
+                                <img src={rightArrow} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="trainers-slide-wrapper">
+                        <div className="trainers-card">
+                            <div className="trainers-card-wrapper">
+                                <img src={trainer1} alt="" />
+                                <h2 className="trainer-name">Pulvinar <br />
+                                    aliquam</h2>
+                                <p className="trainer-regali">
+                                    Arcu elit massa amet turpis vel consequat pellentesque sit.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="trainers-card">
+                            <div className="trainers-card-wrapper">
+                                <img src={trainer2} alt="" />
+                                <h2 className="trainer-name">Pretium <br />
+                                    odio</h2>
+                                <p className="trainer-regali">
+                                    Bibendum aliquam volutpat nisl a duis in nisi. In sed commodo lorem morbi quis.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="trainers-card">
+                            <div className="trainers-card-wrapper">
+                                <img src={trainer3} alt="" />
+                                <h2 className="trainer-name">Aliquet <br />
+                                    consectetur</h2>
+                                <p className="trainer-regali">
+                                    Id sapien sed nibh fermentum massa posuere ipsum. Diam in.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="trainers-card">
+                            <div className="trainers-card-wrapper">
+                                <img src={trainer4} alt="" />
+                                <h2 className="trainer-name">Blandit <br />
+                                    augue</h2>
+                                <p className="trainer-regali">
+                                    Scelerisque accumsan pretium justo, vitae elit. Dolor semper morbi sit auctor vel diam eros.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="trainers-card">
+                            <div className="trainers-card-wrapper">
+                                <img src={trainer5} alt="" />
+                                <h2 className="trainer-name">Lorem <br />
+                                    lacus</h2>
+                                <p className="trainer-regali">
+                                    Adipiscing amet, viverra dignissim egestas. Sed nibh egestas venenatis faucibus.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="trainers-card">
+                            <div className="trainers-card-wrapper">
+                                <img src={trainer6} alt="" />
+                                <h2 className="trainer-name">Sed <br />
+                                    erat</h2>
+                                <p className="trainer-regali">
+                                    Quis ullamcorper pretium lacus risus tellus dolor etiam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <secrion className="price">
+                    <div className="price-container">
+                        <div className="price-abonement">
+                            <h2 className="price-h2">
+                                Цены и абонементы
+                            </h2>
+                            <div className="price-block-1 text">
+                                Зимний сезон 2021-2022
+                                <div className="arrow-decor">
+                                    <img src={arrowDecor} alt="" />
+                                </div>
+                            </div>
+                            <div className="price-block-1">
+                                Абонемент
+                                <div className="arrow-decor">
+                                    <img src={arrowDecor} alt="" />
+                                </div>
+                            </div>
+                            <div className="price-block-1">
+                                Скидки
+                                <div className="arrow-decor">
+                                    <img src={arrowDecor} alt="" />
+                                </div>
+                            </div>
+                            <div className="price-block-1">
+                                Дополнительные услуги
+                                <div className="arrow-decor">
+                                    <img src={arrowDecor} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="price-services">
+                            <div className="price-services-h2-container">
+                                <h2 className="trainers-h2">Услуги
+                                </h2>
+                                <div className="trainers-slider-btn-wrapper">
+                                    <div className="trainers-slider-btn">
+                                        <img src={leftArrow} alt="" />
+                                    </div>
+                                    <div className="trainers-slider-btn">
+                                        <img src={rightArrow} alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </secrion>
             </div>
         )
     }
