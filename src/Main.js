@@ -8,6 +8,9 @@ import trainer4 from './img/trainers_photo_4.png'
 import trainer5 from './img/trainers_photo_5.png'
 import trainer6 from './img/trainers_photo_6.png'
 import arrowDecor from './img/abonement-arrow-decor.png'
+
+
+
 class Main extends React.Component {
     render() {
         return (
@@ -133,7 +136,7 @@ class Main extends React.Component {
                         </div>
                     </div>
                 </section>
-                <secrion className="price">
+                <section className="price">
                     <div className="price-container">
                         <div className="price-abonement">
                             <h2 className="price-h2">
@@ -177,9 +180,16 @@ class Main extends React.Component {
                                     </div>
                                 </div>
                             </div>
+                            <div className="services-content-border">
+                                <div className="services-text">
+                                    <p>
+                                        Уютное кафе
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </secrion>
+                </section>
             </div>
         )
     }
